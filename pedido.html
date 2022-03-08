@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/labels.css">
+</head>
+<body>
+<header class="logo">
+    <img src="/images/logo.jpg" class="logo" alt="logo">
+    <h1 class="nombre-sitio">Pastelería <span>Xocolatte</span></h1>
+</header>
+<div class="contenedor-navegacion">
+    <nav class="nav-principal contenedor">
+        <!--    <a href="menu.html" class=enlace>Menu</a>-->
+        <a href=index.html class=enlace>Inicio</a>
+        <a href="contacto.html" class=enlace>Contacto</a>
+    </nav>
+</div>
+
+    <div class="hero-2"></div>
+    <main class="contenido-principal contenedor ">
+
+        <form class="formulario">
+            <div class="pedido">
+                <h2 class="center">Seleccione el sabor base del pastel</h2>
+                <label for="base"></label><select name="base" id="base" placeholder="Base" class="center">Sabor Base
+                <option value="1">Tres Leches</option>
+                <option value="2">Chocolate</option>
+                <option value="3">Vainilla</option>
+                <option value="4">Fresa</option>
+                <option value="5">Café</option>
+            </select>
+                <div class="pedido">
+                    <h2 class="center">Seleccione el tamaño del pastel</h2>
+                    <label for="base"></label><select name="tamano" id="tamano" placeholder="Tamaño" class="center">Tamaño
+                    <option value="1">Cupcake</option>
+                    <option value="2">Muffin</option>
+                    <option value="3">Personal</option>
+                    <option value="4">Mediano (5 porciones)</option>
+                    <option value="5">Birth Day (10 porciones)</option>
+
+                    <textarea rows="10" cols="72"></textarea>
+                    <p class="text-in">En caso de ser pedidos en cantidad, por favor especifique arriba:</p>
+                </select>
+            </div>
+            <div class="pick">
+                <h2>Lugar de Recepción</h2>
+                <input type="radio" id="local" name="lugar" value="Local">
+                <label for="local">Servicio a Domicilio</label>
+                <input type="radio" id="llevar" name="lugar" value="Llevar">
+                <label for="llevar">Recoger en Sucursal</label>
+            </div>
+
+
+            <div class="campo pick">
+                <label for="#">Dirección:</label><br>
+                <textarea rows="10" cols="20"></textarea>
+            </div>
+            <div class="relleno center">
+                <table class="caja">
+                    <h2 class="centrado">Selecciona el relleno</h2>
+                    <tr>
+                        <td><input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+                            <label for="chocolate">Chocolate </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
+                            <label for="vainilla">Vainilla </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="fresa" name="fresa" value="Fresa">
+                            <label for="fresa">Fresa </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="cafe" name="cafe" value="Cafe">
+                            <label for="cafe">Café </label></td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" id="Trufa" name="Trufa" value="Trufa">
+                        <label for="Trufa">Trufa </label></td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" id="Chantilly" name="Chantilly" value="Chantilly">
+                        <label for="Chantilly">Chantilly </label></td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" id="Moras" name="Moras" value="Moras">
+                        <label for="Moras">Moras </label></td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" id="VinoRojo" name="VinoRojo" value="VinoRojo">
+                        <label for="VinoRojo">Vino Rojo </label></td>
+                </table>
+            </div>
+            <table class="center">
+                <h2 class="relleno center">Cubierta</h2>
+                <tr>
+                    <td><input type="checkbox" id="c_fondant" name="C_fondant" value="c_fondant">
+                        <label for="c_fondant">fondant </label></td>
+                </tr>
+                <tr>
+                <td><input type="checkbox" id="c_trufa" name="C_trufa" value="c_trufa">
+                    <label for="c_trufa">Trufa </label></td>
+                </tr>
+                <tr>
+                <td><input type="checkbox" id="c_chantilly" name="C_Chantilly" value="c_chantilly">
+                    <label for="c_chantilly">Chantilly </label></td>
+                </tr>
+                <tr>
+                <td><input type="checkbox" id="c_moras" name="C_Moras" value="c_moras">
+                    <label for="c_moras">Moras </label></td>
+                </tr>
+                <tr>
+                <td><input type="checkbox" id="Frutos" name="Frutos" value="Frutos">
+                    <label for="Frutos">Frutos </label></td>
+
+                </tr>
+            </table>
+            </div>
+            <div class="enviar">
+            <input class="button" type="submit" value="Enviar Pedido">
+            </div>
+
+
+        </form>
+
+
+    </main>
+    <div>
+        <h2 class="title-mes center">Galería y precios</h2>
+        <div class="productos-mes"><!--listado de productos-->
+            <div><!--producto-->
+                <img src="/images/1-cupcake.jpg" alt="producto_1">
+
+                <div>
+                    <h3 class="subtitle-prod">Cupcake</h3>
+                    <p class="price">$ 32.00</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="/images/2-muffin.jpg" alt="producto_2">
+                <div>
+                    <h3 class="subtitle-prod">Muffin</h3>
+                    <p class="price">$ 43.00</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="/images/3-personal.jpg" alt="producto_3">
+                <div>
+                    <h3 class="subtitle-prod">Pastel Personal</h3>
+                    <p class="price">$ 42.00</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="/images/4-mediano.jpg" alt="producto_4">
+                <div>
+                    <h3 class="subtitle-prod">Pastel Mediano <span>(*5)</span></h3>
+                    <p class="price">$ 340.00</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="/images/5-grande.jpg" alt="producto_5">
+                <div>
+                    <h3 class="subtitle-prod">Pastel Grande <span>(*10)</span></h3>
+                    <p class="price">$ 618.00</p>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+
+    <footer class="footer">
+        <p>Todos los derechos reservados, Xocolatte S.A. de C.V.</p>
+    </footer>
+
+</body>
+</html>

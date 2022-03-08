@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/labels.css">
+</head>
+<body>
+<header class="logo">
+    <img src="/images/logo.jpg" class="logo" alt="logo">
+    <h1 class="nombre-sitio">Pastelería <span>Xocolatte</span></h1>
+</header>
+<div class="contenedor-navegacion">
+    <nav class="nav-principal contenedor">
+        <!--    <a href="menu.html" class=enlace>Menu</a>-->
+        <a href=index.html class=enlace>Inicio</a>
+        <a href="pedido.html" class=enlace>Pedido</a>
+    </nav>
+</div>
+        <div class="hero"></div>
+
+    
+    <main class="contenido-principal contenedor ">
+        <h2 class="text-center">Contacto</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input  id="nombre" type="text" placeholder="Tu Nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input id="asunto" type="text" placeholder="Tu Asunto"  required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="Tu Email" >
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Teléfono:</label>
+                    <input id="tel" type="tel" placeholder="Tu Teléfono" >
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Mensaje:</label>
+                    <textarea rows="10" cols="20"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Estado</legend>
+
+                <div class="campo">
+                    <label for="estado">Sucursal</label>
+                    <select id="estado">
+                        <option value="">-- Seleccione -- </option>
+                        <option value="MX">México</option>
+                        <option value="MTR">Monterrey</option>
+                        <option value="GDL">Guadalajara</option>
+                    </select>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Extra</legend>
+                
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                </div>
+
+
+            </fieldset>
+
+            <input class="btn enviar ghost" type="submit" value="Enviar Formulario" >
+        </form>
+        
+    </main>
+
+
+
+
+        <footer class="footer">
+            <p>Todos los derechos reservados, Xocolatte S.A. de C.V.</p>
+        </footer>
+
+</body>
+</html>
