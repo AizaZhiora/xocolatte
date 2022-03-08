@@ -130,11 +130,19 @@ H1, H2, H3 {
 .footer {
     background-color: #303040;
     color: #D9923B;
-    padding: 2rem;
     text-align: center;
     margin-top: 2rem;
-    font-size: 1rem
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "CDMX MTY GDL"
+    "CDMX MTY GDL"
+    "CDMX MTY GDL";
 }
+.CDMX { grid-area: CDMX; }
+.MTY { grid-area: MTY; }
+.GDL { grid-area: GDL; }
 
 .description {
     /*hacer boton y que se contraigo el texto*/
